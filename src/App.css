@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  /* 100vh yerine min-height, scrollu aktif eder */
+  display: flex;
+  justify-content: center;
+  /* yatay ortala */
+  align-items: flex-start;
+  /* dikeyde içerik yukardan başlasın, scroll aktif */
+  padding-top: 20px;
+  /* üstten boşluk */
+  padding-bottom: 20px;
+  /* alt boşluk */
+  overflow-y: auto;
+  /* dikey scrollu aktif et */
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.baslik {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #075e54;
+  font-size: 24px;
+}
+
+.sec-btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #25d366;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  max-height: 80vh;
+  overflow-y: auto;
+  /* modal içinde scroll */
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.modal li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal li:hover {
+  background-color: #e0f7f1;
+}
+
+.ders-listesi {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ders-listesi h2 {
+  color: #128c7e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ders-listesi ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.ders-item {
+  background: #dcf8c6;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ders-name {
+  font-weight: bold;
+  color: #075e54;
+}
+
+.ders-info {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Mobil uyumluluk */
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 15px;
+  }
+
+  .sec-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .ders-listesi {
+    max-width: 100%;
+  }
+
+  .ders-item {
+    padding: 10px;
+  }
+}
