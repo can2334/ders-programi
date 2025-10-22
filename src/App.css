@@ -1,23 +1,17 @@
+/* Genel sayfa ayarları */
 body {
+  background-color: #f0f2f5;
+  color: #000;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  min-height: 100vh;
-  /* 100vh yerine min-height, scrollu aktif eder */
   display: flex;
   justify-content: center;
-  /* yatay ortala */
-  align-items: flex-start;
-  /* dikeyde içerik yukardan başlasın, scroll aktif */
-  padding-top: 20px;
-  /* üstten boşluk */
-  padding-bottom: 20px;
-  /* alt boşluk */
-  overflow-y: auto;
-  /* dikey scrollu aktif et */
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* Uygulama kutusu */
 .app {
   width: 100%;
   max-width: 500px;
@@ -30,6 +24,7 @@ body {
   align-items: center;
 }
 
+/* Başlık */
 .baslik {
   text-align: center;
   margin-bottom: 20px;
@@ -37,6 +32,7 @@ body {
   font-size: 24px;
 }
 
+/* Sınıf seçme butonu */
 .sec-btn {
   width: 100%;
   max-width: 300px;
@@ -50,6 +46,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Modal arka plan */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -62,6 +59,7 @@ body {
   align-items: center;
 }
 
+/* Modal kutusu */
 .modal {
   background: #fff;
   border-radius: 12px;
@@ -69,9 +67,6 @@ body {
   width: 90%;
   max-width: 300px;
   text-align: center;
-  max-height: 80vh;
-  overflow-y: auto;
-  /* modal içinde scroll */
 }
 
 .modal ul {
@@ -91,6 +86,7 @@ body {
   background-color: #e0f7f1;
 }
 
+/* Ders listesi */
 .ders-listesi {
   width: 100%;
   max-width: 400px;
@@ -135,6 +131,7 @@ body {
 @media screen and (max-width: 600px) {
   .app {
     padding: 15px;
+    width: 95%;
   }
 
   .sec-btn {
